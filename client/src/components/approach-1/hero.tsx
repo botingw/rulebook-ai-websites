@@ -29,8 +29,8 @@ export default function Hero() {
             <span className="text-primary">AI Coding Assistants</span>
           </h1>
           <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed" data-testid="text-hero-description">
-            Manage modular rule packs across Cursor, CLINE, RooCode, and Windsurf. 
-            Build consistent AI workflows with community-shared templates and best practices.
+            Cross-platform rule management for 10 AI assistants including Cursor, Windsurf, Cline, RooCode, and more. 
+            Composable packs, zero config conflicts, with a thriving community ecosystem.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button 
@@ -40,14 +40,14 @@ export default function Hero() {
               data-testid="button-install-cli"
             >
               <Download className="mr-2 h-5 w-5" />
-              Install CLI Tool
+              Install via CLI
             </Button>
             <Button 
               variant="secondary" 
               size="lg" 
               className="text-lg font-semibold"
               asChild
-              data-testid="button-view-github"
+              data-testid="button-view-docs"
             >
               <a href="https://github.com/rulebook-ai/rulebook-ai" target="_blank" rel="noopener noreferrer">
                 <Github className="mr-2 h-5 w-5" />
@@ -60,19 +60,25 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-8 justify-center text-center">
             <div>
               <div className="text-2xl font-bold text-foreground" data-testid="text-github-stars">
-                {githubLoading ? "..." : githubStats?.stars?.toLocaleString() || "1,234"}
+                {githubLoading ? "..." : githubStats?.stars?.toLocaleString() || "350"}
               </div>
               <div className="text-sm text-muted-foreground">GitHub Stars</div>
             </div>
             <div>
+              <div className="text-2xl font-bold text-foreground" data-testid="text-github-forks">
+                {githubLoading ? "..." : githubStats?.forks?.toLocaleString() || "30"}
+              </div>
+              <div className="text-sm text-muted-foreground">GitHub Forks</div>
+            </div>
+            <div>
               <div className="text-2xl font-bold text-foreground" data-testid="text-community-packs">
-                {communityLoading ? "..." : communityStats?.count || "45"}
+                {communityLoading ? "..." : communityStats?.count || "15"}
               </div>
               <div className="text-sm text-muted-foreground">Community Packs</div>
             </div>
             <div>
               <div className="text-2xl font-bold text-foreground" data-testid="text-supported-assistants">
-                4
+                10
               </div>
               <div className="text-sm text-muted-foreground">Supported Assistants</div>
             </div>
