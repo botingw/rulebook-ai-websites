@@ -110,10 +110,13 @@ export default function Community() {
             <Button 
               size="lg" 
               className="bg-primary hover:bg-primary/90"
+              asChild
               data-testid="button-publish-pack"
             >
-              <Upload className="mr-2 h-5 w-5" />
-              Publish Your First Pack
+              <a href="https://github.com/botingw/community-index#contributing" target="_blank" rel="noopener noreferrer">
+                <Upload className="mr-2 h-5 w-5" />
+                Publish Your First Pack
+              </a>
             </Button>
             <p className="text-sm text-muted-foreground mt-3">
               Free to publish • Attribution included • Community support
