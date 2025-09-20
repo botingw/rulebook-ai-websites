@@ -42,7 +42,7 @@ export default function ApproachSelection() {
               </div>
               <Link href="/approach-1">
                 <Button className="w-full" data-testid="button-approach-1">
-                  View Approach 1
+                  View Original Design
                 </Button>
               </Link>
             </CardContent>
