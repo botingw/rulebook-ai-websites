@@ -48,30 +48,32 @@ export default function ApproachSelection() {
             </CardContent>
           </Card>
 
-          <Card className="opacity-50">
+          <Card className="hover:shadow-lg transition-shadow">
             <CardHeader>
               <div className="flex items-center justify-between">
                 <CardTitle className="flex items-center space-x-2">
-                  <Palette className="w-5 h-5 text-muted-foreground" />
+                  <Palette className="w-5 h-5 text-primary" />
                   <span>Approach 2</span>
                 </CardTitle>
-                <Badge variant="secondary">Coming Soon</Badge>
+                <Badge variant="default">Ready</Badge>
               </div>
             </CardHeader>
             <CardContent>
-              <h3 className="font-semibold mb-2">Visual & Interactive</h3>
+              <h3 className="font-semibold mb-2">With Landing Page Guide</h3>
               <p className="text-muted-foreground text-sm mb-4">
-                More visual approach with animations, interactive demos, and emphasis on user experience and design.
+                Same feature specs as Approach 1, but AI also received a comprehensive landing page guide for better structure and messaging.
               </p>
               <div className="space-y-2 text-xs text-muted-foreground mb-4">
-                <div>• Animated hero section</div>
-                <div>• Interactive pack builder</div>
-                <div>• Visual workflow demos</div>
-                <div>• Testimonials & case studies</div>
+                <div>• Hero with clear value proposition</div>
+                <div>• Step-by-step how it works</div>
+                <div>• Community pack ecosystem</div>
+                <div>• Getting started with CLI</div>
               </div>
-              <Button disabled className="w-full" data-testid="button-approach-2">
-                Coming Soon
-              </Button>
+              <Link href="/approach-2">
+                <Button className="w-full" data-testid="button-approach-2">
+                  View Approach 2
+                </Button>
+              </Link>
             </CardContent>
           </Card>
 
